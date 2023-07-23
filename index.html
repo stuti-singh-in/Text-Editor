@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- HTML5 document type declaration -->
+<html lang="en">
+<!-- Start of the HTML document, with the language set to English -->
+
+<head>
+        <!-- The head section contains metadata and external resources -->
+
+    <meta charset="UTF-8">
+        <!-- Character encoding set to UTF-8, supporting a wide range of characters -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Meta tag for setting the viewport properties, ensuring proper scaling on different devices -->
+
+    <meta http-equiv="X-UA-Comptible" content="ie=edge">
+        <!-- Meta tag for specifying how Internet Explorer should render the webpage -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <!-- Linking the Font Awesome CSS library for using icons -->
+
+    <title>Text Editor</title>
+        <!-- The title of the webpage displayed on the browser's title bar or tab -->
+
+    <link rel="stylesheet" href="style.css">
+        <!-- Linking an external CSS file named "style.css" for styling the HTML content -->
+
+</head>
+
+<body>
+<!-- The body section contains the visible content of the webpage -->
+
+    <div class="container">        <!-- A container div to hold the entire content -->
+
+        <div class="options">            <!-- Div for various text formatting options -->
+
+            <button id="bold" class="option-button format">            <!-- Buttons for formatting options with Font Awesome icons -->
+
+                <i class="fas fa-bold"></i>
+            </button>
+            <button id="superscript" class="option-button script">
+                <i class="fa-solid fa-superscript"></i>
+            </button>
+            <button id="subscript" class="option-button script">
+                <i class="fa-solid fa-subscript"></i>
+            </button>
+
+            <button id="insertOrderedList" class="option-button">
+                <div class="fa-solid fa-list-ol"></div>
+            </button>
+            <button id="insertUnorderedList" class="option-button">
+                <i class="fa-solid fa-list"></i>
+            </button>
+
+            <button id="undo" class="option-button">
+                <i class="fa-solid fa-rotate-left"></i>
+            </button>
+            <button id="redo" class="option-button">
+                <i class="fa-solid fa-rotate-right"></i>
+            </button>
+
+            <button id="createLink" class="adv-option-button">
+                <i class="fa fa-link"></i>
+            </button>
+            <button id="unlink" class="option-button">
+                <i class="fa fa-unlink"></i>
+            </button>
+
+            <button id="justifyLeft" class="option-button align">
+                <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button id="justifyCenter" class="option-button align">
+                <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button id="justifyRight" class="option-button align">
+                <i class="fa-solid fa-align-right"></i>
+            </button>
+            <button id="justifyFull" class="option-button align">
+                <i class="fa-solid fa-align-justify"></i>
+            </button>
+            <button id="indent" class="option-button spacing">
+                <i class="fa-solid fa-indent"></i>
+            </button>
+            <button id="outdent" class="option-button spacing">
+                <i class="fa-solid fa-outdent"></i>
+            </button>
+            <select id="formatBlock" class="adv-option-button"> <!-- Dropdown select box for block-level text formatting -->
+
+                <option value="H1">H1</option>
+                <option value="H2">H2</option>
+                <option value="H3">H3</option>
+                <option value="H4">H4</option>
+                <option value="H5">H5</option>
+                <option value="H6">H6</option>
+                                <!-- Options for different heading levels -->
+
+            </select>
+            <select id="fontName" class="adv-option-button"></select>
+            <select id="fontSize" class="adv-option-button"></select>
+
+                        <!-- Input wrappers for choosing font and highlight colors -->
+
+            <div class="input-wrapper">
+                <input type="color" id="foreColor" class="adv-option-button">
+                <label for="foreColor">Font Color</label>
+            </div>
+
+            <div class="input-wrapper">
+                <input type="color" id="backcolor" class="adv-option-button">
+                <label for="backcolor">Highlight Color</label>    
+        </div>
+
+    </div>
+
+</div>
+<div id="text-input" contenteditable="true"></div>        <!-- A div for the text input area that can be edited by users -->
+
+</div>
+
+<script src="script.js"></script>    <!-- Linking an external JavaScript file named "script.js" for interactivity and functionality -->
+
+
+</body>
+</html>
